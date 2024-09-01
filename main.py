@@ -5,18 +5,11 @@ from gatet import Tele
 import os
 token = '7084358044:AAH4S-fo_UV3PApkYckRcquatjCxJMEN1-s'
 bot=telebot.TeleBot(token,parse_mode="HTML")
-subscriber = ''
 @bot.message_handler(commands=["start"])
 def start(message):
-	if not str(message.chat.id) == '':
-		bot.reply_to(message, "You cannot use the bot to contact developers to purchase a bot subscription TM")
-		return
 	bot.reply_to(message,"Send the file now")
 @bot.message_handler(content_types=["document"])
-def main(message):
-	if not str(message.chat.id) == '':
-		bot.reply_to(message, "You cannot use the bot to contact developers to purchase a bot subscription TM")
-		return
+def
 	dd = 0
 	live = 0
 	ch = 0
