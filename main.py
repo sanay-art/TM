@@ -9,6 +9,7 @@ bot=telebot.TeleBot(token,parse_mode="HTML")
 def start(message):
 	bot.reply_to(message,"Send the file now")
 @bot.message_handler(content_types=["document"])
+return
 	dd = 0
 	live = 0
 	ch = 0
