@@ -14,7 +14,7 @@ def start(message):
 	bot.reply_to(message,"Send the file now")
 @bot.message_handler(content_types=["document"])
 def main(message):
-	if not str(message.chat.id) == '1706037532':
+	if not str(message.chat.id) == '7478639332':
 		bot.reply_to(message, "You cannot use the bot to contact developers to purchase a bot subscription TM")
 		return
 	dd = 0
